@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: regression-model
+Version: 0.1.0
+Summary: Train and deploy regression model
+Home-page: Abboah's github project
+Author: Bernard Baah Abboah
+Author-email: abboahbaah@gmail.com
+License: Capable African
+Description: Train and deploy regression model
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown

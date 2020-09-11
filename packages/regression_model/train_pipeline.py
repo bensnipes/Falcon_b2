@@ -1,10 +1,10 @@
-from regression_model import pipeline
-from regression_model.processing.data_management import (load_dataset,save_pipeline)
-from regression_model.config import config
+from packages.regression_model import pipeline
+from packages.regression_model.processing.data_management import (load_dataset,save_pipeline)
+from packages.regression_model.config import config
 import numpy as np
 from sklearn.model_selection import train_test_split
-from regression_model import __version__ as _version
-from regression_model.config  import logging_config
+from packages.regression_model import __version__ as _version
+from packages.regression_model.config  import logging_config
 
 
 _logger = logging_config.get_logger()

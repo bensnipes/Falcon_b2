@@ -1,15 +1,2 @@
-Making predictions with model version: 0.1.0Inputs:       longitude  latitude  ...  median_house_value  ocean_proximity
-0       -117.05     32.58  ...            136900.0       NEAR OCEAN
-1       -117.97     33.92  ...            241300.0        <1H OCEAN
-2       -121.84     38.65  ...            200700.0           INLAND
-3       -115.60     33.20  ...             72500.0           INLAND
-4       -122.43     37.79  ...            460000.0         NEAR BAY
-...         ...       ...  ...                 ...              ...
-2059    -118.22     33.98  ...            123200.0        <1H OCEAN
-2060    -121.81     37.30  ...            235600.0        <1H OCEAN
-2061    -118.29     33.84  ...            237900.0        <1H OCEAN
-2062    -118.33     34.17  ...            245100.0        <1H OCEAN
-2063    -116.93     32.83  ...            163500.0        <1H OCEAN
-
-[2045 rows x 10 columns]Predictions: [11.84092074 12.37699619 12.20275002 ... 12.36357463 12.39177476
- 12.00886077]
+saving model version: 0.1.0
+saved pipeline: lasso_regression_output_v0.1.0.pkl

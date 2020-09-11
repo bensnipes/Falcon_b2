@@ -7,7 +7,7 @@ from regression_model import __version__ as _version
 from regression_model.config  import logging_config
 
 
-_logger = logging_config.get_logger(__name__)
+_logger = logging_config.get_logger()
 
 
 

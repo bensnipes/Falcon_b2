@@ -49,7 +49,7 @@ jobs:
           name: Publish model
           command: |
             . venv/bin/activate
-            PYTHONPATH=packages/regression_model python3 packages/regression_model/train_pipeline.py
+            PYTHONPATH=regression_model python3 regression_model/train_pipeline.py
             script/publish_model.sh packages/regression_model/
 
 workflows:

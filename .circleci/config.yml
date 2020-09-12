@@ -50,7 +50,7 @@ jobs:
           name: Publish model
           command: |
             . venv/bin/activate
-      - run: python ./packages/regression_model/train_pipeline.py
+      - run: python packages/regression_model/train_pipeline.py
             
 
 workflows:

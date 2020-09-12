@@ -12,7 +12,7 @@ wheel=0.32.3
 
 # testing 
 
-pytest=4.6.6
+pytest=6.0.1
 
 
 # Dont leave spaces between the packages and the operational signs.

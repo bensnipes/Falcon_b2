@@ -41,6 +41,7 @@ jobs:
       - run:
           name: Setup env
           command: |
+          
             virtualenv venv
             . venv/bin/activate
             pip install --upgrade pip
@@ -50,7 +51,7 @@ jobs:
           command: |
             . venv/bin/activate
             PYTHONPATH=regression_model python3 regression_model/train_pipeline.py
-            script/publish_model.sh packages/regression_model/
+            ./script/publish_model.sh ./packages/regression_model/
 
 workflows:
   version: 2

@@ -19,7 +19,7 @@ jobs:
   test_ml_api:
     working_directory: ~/project
     docker:
-      - image: circleci/python:3.7.0
+      - image: circleci/python:3.7.2
     steps:
       - checkout
       - run:
@@ -28,6 +28,7 @@ jobs:
             virtualenv venv
             . venv/bin/activate
             pip install --upgrade pip
+            python -m pip install numpy==1.15.4
             pip install -r packages/ml_api/requirements.txt
             py.test -vv packages/ml_api/tests
   
@@ -45,7 +46,6 @@ jobs:
             virtualenv venv
             . venv/bin/activate
             pip install --upgrade pip
-            python -m pip install numpy==1.15.4
             pip install -r packages/regression_model/requirements.txt
       - run:
           name: Publish model

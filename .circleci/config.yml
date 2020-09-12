@@ -50,7 +50,7 @@ jobs:
           name: Publish model
           command: |
             . venv/bin/activate
-            PYTHONPATH= python3 Falcon_b2/packages/regression_model/train_pipeline.py
+            PYTHONPATH= Falcon_b2/packages/regression_model python3 Falcon_b2/packages/regression_model/train_pipeline.py
             ./script/publish_model.sh ./packages/regression_model/
 
 workflows:

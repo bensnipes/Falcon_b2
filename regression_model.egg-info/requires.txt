@@ -1,4 +1,4 @@
-numpyscikit-learn==0.21.2
+numpy==1.15.4scikit-learn==0.21.2
 pandas
 setuptools
 wheel

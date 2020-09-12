@@ -45,6 +45,7 @@ jobs:
             virtualenv venv
             . venv/bin/activate
             pip install --upgrade pip
+            python -m pip install numpy==1.15.4
             pip install -r packages/regression_model/requirements.txt
       - run:
           name: Publish model

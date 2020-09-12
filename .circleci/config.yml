@@ -30,7 +30,7 @@ jobs:
             pip install --upgrade pip
             python -m pip install numpy==1.16.5
             pip install -r packages/ml_api/requirements.txt
-            py.test -vv packages/ml_api/tests
+            py.test -vv packages/ml_api/tests -p no:warnings
   
 
   train_and_upload_regression_model:

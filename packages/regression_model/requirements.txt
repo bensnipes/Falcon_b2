@@ -1,18 +1,18 @@
 # production requirements
 
-numpy==1.15.4
-scikit-learn==0.21.2
-pandas==0.25.1
+numpy
+scikit-learn
+pandas
 
 # packaging
 
-setuptools==40.6.3
-wheel==0.35.1
+setuptools
+wheel
 
 
 # testing 
 
-pytest==6.0.1
+pytest
 
 
 # Dont leave spaces between the packages and the operational signs.

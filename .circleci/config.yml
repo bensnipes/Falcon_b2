@@ -51,7 +51,7 @@ jobs:
           command: |
             . venv/bin/activate
       - run: python ./packages/regression_model/train_pipeline.py
-            ./script/publish_model.sh ./packages/regression_model/
+            
 
 workflows:
   version: 2

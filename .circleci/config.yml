@@ -28,7 +28,7 @@ jobs:
             virtualenv venv
             . venv/bin/activate
             pip install --upgrade pip
-            python -m pip install numpy==1.16.0
+            python -m pip install numpy==1.16.5
             pip install -r packages/ml_api/requirements.txt
             py.test -vv packages/ml_api/tests
   

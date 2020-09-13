@@ -27,9 +27,9 @@ jobs:
           command: |
             virtualenv venv
             . venv/bin/activate
-            pip install --upgrade pip
-            python -m pip install numpy==1.16.5
-            pip install -r packages/ml_api/requirements.txt
+            pip install --upgrade pip --use-feature=2020-resolver
+            python -m pip install numpy==1.16.5 --use-feature=2020-resolver
+            pip install -r packages/ml_api/requirements.txt --use-feature=2020-resolver
             py.test -vv packages/ml_api/tests -p no:warnings
   
 
@@ -45,8 +45,8 @@ jobs:
           
             virtualenv venv
             . venv/bin/activate
-            pip install --upgrade pip
-            pip install -r packages/regression_model/requirements.txt
+            pip install --upgrade pip --use-feature=2020-resolver
+            pip install -r packages/regression_model/requirements.txt --use-feature=2020-resolver
       - run:
           name: Publish model
           command: |

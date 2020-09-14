@@ -33,7 +33,7 @@ jobs:
             python -m pip install marshmallow==2.17.0 --use-feature=2020-resolver
             python -m pip install pandas==0.25.1 --use-feature=2020-resolver
             python -m pip install scikit-learn==0.21.2 --use-feature=2020-resolver
-            python -m pip install regression_model==0.1.0 --index-url= https://manage.fury.io/dashboard/bensnipes/package/
+            python -m pip install regression_model==0.1.0 --extra-index-url= https://manage.fury.io/dashboard/bensnipes/package/pkg_FGgIq/version/ver_13CU8d
             py.test -vv packages/ml_api/tests -p no:warnings
   
 

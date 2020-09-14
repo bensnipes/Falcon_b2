@@ -52,7 +52,7 @@ jobs:
           command: |
             . venv/bin/activate
           PYTHONPATH: ./packages/regression_model python3 packages/regression_model/train_pipeline.py
-            python ./packages/regression_model/setup.py sdist
+
             curl -F package=@<file> https://1f5VIH-f7igwvlhwa4Y9EItN9Yom9eSFEk@push.fury.io/bensnipes/
           
             

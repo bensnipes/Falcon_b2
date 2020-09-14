@@ -27,6 +27,8 @@ jobs:
           command: |
             virtualenv venv
             . venv/bin/activate
+            pip install --upgrade pip --use-feature=2020-resolver
+            python -m pip install pytest --use-feature=2020-resolver
             py.test -vv packages/ml_api/tests -p no:warnings
   
 

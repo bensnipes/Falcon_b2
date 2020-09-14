@@ -3,7 +3,7 @@
 # have deleted the dependencies and hard coded on config.yml
 
 # Install from Gemfury
-regression_model==0.1.0
+regression_model==0.2.0
 
 
 

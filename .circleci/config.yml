@@ -28,7 +28,7 @@ jobs:
             virtualenv venv
             . venv/bin/activate
             pip install --upgrade pip --use-feature=2020-resolver
-            python -m pip install numpy>=1.11.0 --use-feature=2020-resolver
+            python -m pip install numpy --use-feature=2020-resolver
             pip install -r packages/ml_api/requirements.txt --use-feature=2020-resolver
             py.test -vv packages/ml_api/tests -p no:warnings
   

@@ -3,7 +3,7 @@ import io
 import os
 from pathlib import Path
 
-from setuptools import find_packages, setup
+from setuptools import setup
 
 # Package Metadata
 NAME = "regression_model"
@@ -12,7 +12,6 @@ URL = "Abboah's github project"
 EMAIL = "abboahbaah@gmail.com"
 AUTHOR = "Bernard Baah Abboah"
 REQUIRES_PYTHON = ">=3.6.0"
-find_links = "./packages/regression_model/requirements.txt"
 
 # What packages are required for this model to be executed?
 
@@ -58,9 +57,8 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=find_packages(exclude=("tests",)),
     package_data={"regression_model": ["VERSION"]},
-    install_requires=find_links,
+    install_requires=list_reqs(),
     extras_require={},
     include_package_data=True,
     license="Capable African",

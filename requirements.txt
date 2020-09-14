@@ -1,7 +1,7 @@
 # production requirements
 
 numpy
-scikit-learn
+scikit-learn==0.21.2
 pandas
 
 # packaging
@@ -12,7 +12,7 @@ wheel
 
 # testing 
 
-pytest
+pytest==6.0.1
 
 
 # Dont leave spaces between the packages and the operational signs.

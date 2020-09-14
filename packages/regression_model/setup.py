@@ -11,7 +11,7 @@ DESCRIPTION = "Train and deploy regression model"
 URL = "Abboah's github project"
 EMAIL = "abboahbaah@gmail.com"
 AUTHOR = "Bernard Baah Abboah"
-REQUIRES_PYTHON = ">=3.6.0"
+
 
 # What packages are required for this model to be executed?
 
@@ -55,7 +55,6 @@ setup(
     long_description_content_type="text/markdown",
     author=AUTHOR,
     author_email=EMAIL,
-    python_requires=REQUIRES_PYTHON,
     url=URL,
     packages=find_packages(exclude=("tests",)),
     package_data={"regression_model": ["VERSION"]},

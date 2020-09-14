@@ -33,6 +33,7 @@ jobs:
             python -m pip install marshmallow==2.17.0 --use-feature=2020-resolver
             python -m pip install pandas==0.25.1 --use-feature=2020-resolver
             python -m pip install scikit-learn==0.21.2 --use-feature=2020-resolver
+            pip install -r packages/ml_api/requirements.txt --use-feature=2020-resolver
             py.test -vv packages/ml_api/tests -p no:warnings
   
 
@@ -55,7 +56,6 @@ jobs:
           command: |
             . venv/bin/activate
           PYTHONPATH: ./packages/regression_model python3 packages/regression_model/train_pipeline.py
-                      --extra-index-url=${PIP_EXTRA_INDEX_URL}
                       ./script/publish_model.sh ./packages/regression_model/
 
             

@@ -55,12 +55,6 @@ setup(
     long_description_content_type="text/markdown",
     author=AUTHOR,
     author_email=EMAIL,
-    python_requires=REQUIRES_PYTHON,
-    url=URL,
-    package_data={"regression_model": ["VERSION"]},
-    install_requires=list_reqs(),
-    extras_require={},
-    include_package_data=True,
     license="Capable African",
     Classifiers=[
         #Trove classifiers

@@ -2,7 +2,7 @@
 
 # Building packages and uploading them to a Gemfury repository
 
-GEMFURY_URL=https://kruTsJ7a3EF1xViVUULx@pypi.fury.io/bensnipes/
+GEMFURY_URL=$PIP_EXTRA_INDEX_URL
 
 set -e
 
@@ -29,7 +29,7 @@ build() {
     python "$SETUP" sdist bdist_wheel || die "Building package $PACKAGE_NAME failed"
     for X in $(ls dist)
     do
-        curl -F package=@<file> https://kruTsJ7a3EF1xViVUULx@push.fury.io/bensnipes/ || die "Uploading package $PACKAGE_NAME failed on file dist/$X"
+        curl -F package=@"dist/$X" "$GEMFURY_URL" || die "Uploading package $PACKAGE_NAME failed on file dist/$X"
     done
 }
 

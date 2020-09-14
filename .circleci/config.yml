@@ -31,6 +31,7 @@ jobs:
             python -m pip install pytest --use-feature=2020-resolver
             python -m pip install flask==1.0.2 --use-feature=2020-resolver
             python -m pip install marshmallow==2.17.0 --use-feature=2020-resolver
+            python -m pip install pandas==0.25.1 --use-feature=2020-resolver
             py.test -vv packages/ml_api/tests -p no:warnings
   
 

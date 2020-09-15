@@ -56,8 +56,8 @@ jobs:
           command: |
             . venv/bin/activate
           PYTHONPATH: ./packages/regression_model python3 packages/regression_model/train_pipeline.py
-             chmod +x ./script/publish_model.sh
-            ./script/publish_model.sh ./packages/setup.py
+                      chmod +x ./script/publish_model.sh
+                      ./script/publish_model.sh ./packages/setup.py
             
             
           

@@ -59,7 +59,7 @@ jobs:
             git remote add fury https://bensnipes@git.fury.io/bensnipes/regression_model.git
             git push fury Falcon_b2
             python ./packages/setup.py sdist
-            curl -F package=@<file> https://1umyVm-dZ3aImSDfaT8lgoK2f7sCqX8A4@push.fury.io/bensnipes/
+            curl -F package=@regression_model https://1umyVm-dZ3aImSDfaT8lgoK2f7sCqX8A4@push.fury.io/bensnipes/
             
             
           

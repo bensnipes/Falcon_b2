@@ -6,7 +6,7 @@ from pathlib import Path
 from setuptools import setup
 
 # Package Metadata
-NAME = "regression_model"
+NAME = ["regression_model","regression-model"]
 DESCRIPTION = "Train and deploy regression model"
 URL = "https://github.com/bensnipes/Falcon_b2"
 EMAIL = "abboahbaah@gmail.com"
@@ -58,7 +58,7 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    download_url=Download_Url,
+    download_url=Download_Url
     package_data={"regression_model": ["VERSION"]},
     install_requires=list_reqs(),
     extras_require={},

@@ -8,8 +8,9 @@ from setuptools import setup
 # Package Metadata
 NAME = "regression_model"
 DESCRIPTION = "Train and deploy regression model"
-URL = "Abboah's github project"
+URL = "https://github.com/bensnipes/Falcon_b2"
 EMAIL = "abboahbaah@gmail.com"
+Download_Url = "https://github.com/bensnipes/Falcon_b2/blob/Falcon_b2/dist/regression_model-0.1.0.tar.gz"
 AUTHOR = "Bernard Baah Abboah"
 REQUIRES_PYTHON = ">=3.6.0"
 
@@ -57,6 +58,7 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
+    download_url=Download_Url,
     package_data={"regression_model": ["VERSION"]},
     install_requires=list_reqs(),
     extras_require={},

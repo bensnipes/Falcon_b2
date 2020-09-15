@@ -24,12 +24,12 @@ build() {
     echo "Checking directory $DIR"
     cd "$BASE_DIR/$DIR"
     [ ! -e $SETUP ] && warn "No $SETUP file, skipping" && return
-    PACKAGE_NAME=$(python $SETUP --regression_model)
+    PACKAGE_NAME=$(python $SETUP --fullname)
     echo "Package $PACKAGE_NAME"
     python "$SETUP" sdist bdist_wheel || die "Building package $PACKAGE_NAME failed"
     for X in $(ls dist)
     do
-        curl -F package=@"dist/$X" "$GEMFURY_PUSH_URL" || die "Uploading package $PACKAGE_NAME failed on file dist/$X"
+        curl -F package=@"dist/$X" "$GEMFURY_URL" || die "Uploading package $PACKAGE_NAME failed on file dist/$X"
     done
 }
 

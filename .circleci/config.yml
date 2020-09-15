@@ -56,7 +56,7 @@ jobs:
           command: |
             . venv/bin/activate
           PYTHONPATH: ./packages/regression_model python3 packages/regression_model/train_pipeline.py
-            git remote add fury https://bensnipes@git.fury.io/bensnipes/Falcon_b2/dist/regression_model==0.1.0.git
+            git remote add fury https://bensnipes@git.fury.io/bensnipes/regression_model==0.1.0.git
             git push fury Falcon_b2
             python3 setup.py sdist bdist_wheel
             curl -F package=@<file> https://sAdOu-x888Iyfn6TdqQMoyJ9lUNGW6bQ@push.fury.io/bensnipes/

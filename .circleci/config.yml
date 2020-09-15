@@ -56,8 +56,13 @@ jobs:
           command: |
             . venv/bin/activate
           PYTHONPATH: ./packages/regression_model python3 packages/regression_model/train_pipeline.py
-            python3 ./packages/setup.py sdist bdist_wheel
-            curl -F package=@regression_model==0.1.0 https://sAdOu-x888Iyfn6TdqQMoyJ9lUNGW6bQ@push.fury.io/bensnipes/
+            python3 setup.py sdist bdist_wheel
+            for X in $(ls dist)
+            do
+                curl -F package=@"dist/$X" "https://sAdOu-x888Iyfn6TdqQMoyJ9lUNGW6bQ@push.fury.io/bensnipes/"
+            done
+
+            
             
             
           

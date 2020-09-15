@@ -59,7 +59,7 @@ jobs:
             python3 setup.py sdist bdist_wheel
             for X in $(ls dist)
             do
-                curl -F package=@"dist/$X" "https://${GEMFURY_PUSH_URL}@push.fury.io/bensnipes/"
+                curl -F package=@"dist/$X" "https://$GEMFURY_PUSH_URL@push.fury.io/bensnipes/"
             done
 
             

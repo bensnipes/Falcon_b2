@@ -61,7 +61,7 @@ jobs:
           command: |
              . venv/bin/activate
              chmod +x ./script/publish_model.sh
-             ./script/publish_model.sh ./packages/regression_model/                         
+             ./script/publish_model.sh ./packages/                         
 
 workflows:
   version: 2

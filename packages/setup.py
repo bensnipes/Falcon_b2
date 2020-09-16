@@ -9,7 +9,7 @@ from pathlib import Path
 from setuptools import find_packages, setup
 
 # Package Metadata
-NAME = ["regression_model-0.1.0-py3-none-any.whl"]
+NAME = "regression_model-0.1.0-py3-none-any.whl"
 DESCRIPTION = "Train and deploy regression model"
 URL = "https://github.com/bensnipes/Falcon_b2"
 EMAIL = "abboahbaah@gmail.com"

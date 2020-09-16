@@ -58,7 +58,7 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    download_url=Download_Url
+    download_url=Download_Url,
     package_data={"regression_model": ["VERSION"]},
     install_requires=list_reqs(),
     extras_require={},

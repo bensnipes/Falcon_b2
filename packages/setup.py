@@ -63,7 +63,7 @@ setup(
     url=URL,
     download_url=Download_Url,
     package_data={"regression_model": ["VERSION"]},
-    install_requires=list_reqs(),
+    install_requires=["numpy","scikit-learn==0.21.2","pandas","setuptools","wheel","pytest==6.0.1"],
     extras_require={},
     include_package_data=True,
     license="Capable African",

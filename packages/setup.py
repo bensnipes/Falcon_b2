@@ -1,9 +1,12 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 
 import io
 import os
 from pathlib import Path
 
-from setuptools import setup
+from setuptools import find_packages, setup
 
 # Package Metadata
 NAME = ["regression_model-0.1.0-py3-none-any.whl"]

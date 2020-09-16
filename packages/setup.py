@@ -39,7 +39,7 @@ except FileNotFoundError:
 ROOT_DIR = Path(__file__).resolve().parent
 PACKAGE_DIR = ROOT_DIR / "regression_model-0.1.0-py3-none-any.whl"
 CONFIG_DIR = PACKAGE_DIR / "Config"
-VERSION_DIR = CONFIG_DIR / NAME
+VERSION_DIR = CONFIG_DIR / "NAME"
 about = {}
 with open(CONFIG_DIR / "VERSION") as f:
     _version = f.read().strip()

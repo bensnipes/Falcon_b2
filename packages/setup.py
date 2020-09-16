@@ -6,11 +6,11 @@ from pathlib import Path
 from setuptools import setup
 
 # Package Metadata
-NAME = ["regression_model","regression-model"]
+NAME = ["regression_model-0.1.0-py3-none-any.whl"]
 DESCRIPTION = "Train and deploy regression model"
 URL = "https://github.com/bensnipes/Falcon_b2"
 EMAIL = "abboahbaah@gmail.com"
-Download_Url = "https://github.com/bensnipes/Falcon_b2/blob/Falcon_b2/dist/regression_model-0.1.0.tar.gz"
+Download_Url = "https://github.com/bensnipes/Falcon_b2/blob/Falcon_b2/dist/regression_model-0.1.0-py3-none-any.whl"
 AUTHOR = "Bernard Baah Abboah"
 REQUIRES_PYTHON = ">=3.6.0"
 
@@ -37,7 +37,7 @@ except FileNotFoundError:
 # Load the package's __version__.py module as a dictionary.
 
 ROOT_DIR = Path(__file__).resolve().parent
-PACKAGE_DIR = ROOT_DIR / "regression_model"
+PACKAGE_DIR = ROOT_DIR / "regression_model-0.1.0-py3-none-any.whl"
 CONFIG_DIR = PACKAGE_DIR / "Config"
 VERSION_DIR = CONFIG_DIR / NAME
 about = {}

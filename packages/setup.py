@@ -15,7 +15,7 @@ URL = "https://github.com/bensnipes/Falcon_b2"
 EMAIL = "abboahbaah@gmail.com"
 Download_Url = "https://github.com/bensnipes/Falcon_b2/blob/Falcon_b2/dist/regression_model-0.1.0-py3-none-any.whl"
 AUTHOR = "Bernard Baah Abboah"
-REQUIRES_PYTHON = "==3.7.0"
+REQUIRES_PYTHON = "==3.7.2"
 
 # What packages are required for this model to be executed?
 

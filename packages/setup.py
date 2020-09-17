@@ -13,7 +13,7 @@ NAME = "regression_model"
 DESCRIPTION = "Train and deploy regression model"
 URL = "https://github.com/bensnipes/Falcon_b2"
 EMAIL = "abboahbaah@gmail.com"
-Download_Url = "https://github.com/bensnipes/Falcon_b2/blob/Falcon_b2/dist/regression_model-0.1.0-py3-none-any.whl"
+Download_Url = "https://github.com/bensnipes/Falcon_b2/blob/Falcon_b2/dist/regression_model"
 AUTHOR = "Bernard Baah Abboah"
 REQUIRES_PYTHON = "==3.7.2"
 

@@ -32,10 +32,10 @@ jobs:
       - run:
           name: Running differential tests
           command: |
-          virtualenv venv
-          . venv/bin/activate
-          pip install -r packages/ml_api/requirements.txt --use-feature=2020-resolver 
-          py.test -vv packages/ml_api/tests -m  differential
+            virtualenv venv
+            . venv/bin/activate
+            pip install -r packages/ml_api/requirements.txt --use-feature=2020-resolver 
+            py.test -vv packages/ml_api/tests -m  differential
 
 
 

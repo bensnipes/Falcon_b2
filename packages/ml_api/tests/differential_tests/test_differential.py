@@ -19,7 +19,7 @@ def test_model_prediction_differential(*, save_file="test_data_predictions.csv")
     save_file = "test_data_predictions.csv"
     #Given
     previous_model_df = pd.read_csv(f'{model_config.PACKAGE_ROOT}/{save_file}')
-    previous_model_predictions = previous_model_df.predictions.values
+    previous_model_predictions = previous_model_df.predictions
     test_data = load_dataset(file_name=model_config.TESTING_DATA_FILE)
     multiple_test_json = test_data[99:600]
 

@@ -9,8 +9,9 @@ from regression_model.processing.data_management import load_dataset
 
 from ml_api.api import config
 
-def capture_predictions(*, save_file:str = "test_data_predictions.csv"):
+def capture_predictions() -> None:
 
+    save_file = "test_data_predictions.csv"
     test_data = load_dataset(file_name="test.csv")
 
 
@@ -24,7 +25,7 @@ def capture_predictions(*, save_file:str = "test_data_predictions.csv"):
 
     # hack here to save the file to the regression model
     # package of the repo, not the installed package
-    predictions_df.to_csv(f'{config.PACKAGE_ROOT.parent}/'
+    predictions_df.to_csv(f'{config.PACKAGE_ROOT}/'
                           f'regression_model/config/Datasets/{save_file}')
 
 

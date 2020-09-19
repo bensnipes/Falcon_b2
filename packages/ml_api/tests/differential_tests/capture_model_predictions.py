@@ -11,7 +11,8 @@ from ml_api.api import config
 
 def capture_predictions() -> None:
 
-    save_file = "test_data_predictions.csv"
+
+    save_file = 'test_data_predictions.csv'
     test_data = load_dataset(file_name="test.csv")
 
 

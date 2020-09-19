@@ -25,8 +25,7 @@ def capture_predictions() -> None:
 
     # hack here to save the file to the regression model
     # package of the repo, not the installed package
-    predictions_df.to_csv(f'{config.PACKAGE_ROOT}/'
-                          f'regression_model/config/Datasets/{save_file}')
+    predictions_df.to_csv(f'{config.PACKAGE_ROOT}/{save_file}')
 
 
 if __name__ == '__main__':

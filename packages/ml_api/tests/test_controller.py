@@ -48,9 +48,11 @@ def test_prediction_endpoint_returns_prediction(flask_test_client):
     prediction = response_json["predictions"]
     response_version = response_json["version"]
     assert math.ceil(prediction[0]) == 12
-    assert response_version is None
+    assert response_version == _version
     # The response_version looks like {"predictions": 11.84092..., "version": None}
     # So indeed the version is none, due to some null objects created while changing from 
     # one data type to another. Solve this problem in later versions.
+
+    # Problem has been solved in the later versions.
 
     

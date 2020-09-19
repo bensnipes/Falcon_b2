@@ -16,7 +16,7 @@ def test_model_prediction_differential(*, save_file="test_data_predictions.csv")
 
 # This test compares the prediction result similarity of the 
 # current model with the previous model's results.
-
+    save_file = "test_data_predictions.csv"
     #Given
     previous_model_df = pd.read_csv(f'{model_config.PACKAGE_ROOT}/{save_file}')
     previous_model_predictions = previous_model_df.predictions.values

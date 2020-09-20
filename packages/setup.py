@@ -21,7 +21,7 @@ REQUIRES_PYTHON = ">=3.6.0"
 
 def list_reqs(fname= "requirements.txt"):
     with open(fname) as fd:
-        return fd.read().splitlines()
+        return fd.read().splitlines() 
 
 
 # The rest you shouldn't have to touch too much
@@ -73,4 +73,4 @@ setup(
     ]
 
 
-)
+)

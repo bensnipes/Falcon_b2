@@ -15,13 +15,13 @@ URL = "https://github.com/bensnipes/Falcon_b2"
 EMAIL = "abboahbaah@gmail.com"
 Download_Url = "https://github.com/bensnipes/Falcon_b2/blob/Falcon_b2/dist/regression_model"
 AUTHOR = "Bernard Baah Abboah"
-REQUIRES_PYTHON = "==3.7.2"
+REQUIRES_PYTHON = ">=3.6.0"
 
 # What packages are required for this model to be executed?
 
 def list_reqs(fname= "requirements.txt"):
     with open(fname) as fd:
-        return fd.read().splitlines()
+        return fd.read().splitlines() 
 
 
 # The rest you shouldn't have to touch too much

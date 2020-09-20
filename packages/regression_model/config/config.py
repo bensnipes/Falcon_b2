@@ -25,7 +25,7 @@ NUMERICAL_VARS = ["latitude","housing_median_age","total_rooms","population","ho
 PIPELINE_NAME = "lasso_regression"
 PIPELINE_SAVE_FILE =  f'{PIPELINE_NAME}_output_v'
 
-ACCEPTANCE_MODEL_DIFFERENCE = 0.05
+ACCEPTABLE_MODEL_DIFFERENCE = 0.05
 
 
 

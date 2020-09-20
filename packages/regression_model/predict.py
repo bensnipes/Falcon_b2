@@ -24,7 +24,7 @@ def make_prediction(*, input_data: t.Union[pd.DataFrame, dict]) -> dict:
     prediction = _price_pipe.predict(validated_data[config.FEATURES])
     output = prediction
     
-    results = {"predictions": output}
+    results = {"predictions": output,'version': _version}
 
     _logger.debug(
         f"Making predictions with model version: {_version}"

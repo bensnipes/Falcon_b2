@@ -7,7 +7,7 @@ import pandas as pd
 from regression_model.predict import make_prediction
 from regression_model.processing.data_management import load_dataset
 
-from ml_api.api import config
+from api import config
 
 def capture_predictions() -> None:
 

@@ -12,7 +12,7 @@ _logger = logging_config.get_logger()
 
 def load_dataset(*, file_name: str) -> pd.DataFrame:
     data_path = config.DATASET_DIR / file_name
-    data = pd.read_csv(filepath_or_buffer= config.DATASET_DIR/data_path)
+    data = pd.read_csv(filepath_or_buffer=data_path)
     return data
 
 

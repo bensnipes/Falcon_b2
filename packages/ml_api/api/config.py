@@ -4,7 +4,8 @@ import os
 import sys
 
 
-PACKAGE_ROOT = pathlib.Path(__file__).resolve().parent
+PACKAGE_ROOT = pathlib.Path(__file__).resolve().parent  
+# Package_root = C:\Users\Ben\Desktop\Falcon1_env\packages\regression_model\config
 
 FORMATTER = logging.Formatter(
     "%(asctime)s - %(name)s - %(levelname)s - "
@@ -18,13 +19,14 @@ LOG_FILE = LOG_DIR / "ml_api.log"
 def get_console_handler():
     console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setFormatter(FORMATTER)
+    console_handler.setLevel(logging.DEBUG)
     return console_handler
 
 
 def get_file_handler():
     file_handler = logging.FileHandler(LOG_FILE, "w")
     file_handler.setFormatter(FORMATTER)
-    file_handler.setFormatter(logging.WARNING)
+    file_handler.setLevel(logging.INFO)
     return file_handler
 
 

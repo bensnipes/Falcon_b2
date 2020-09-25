@@ -2,7 +2,8 @@ import logging
 
 import sys
 
-from regression_model.config import config
+from regression_model.config.config import LOG_DIR
+
 
 # Multiple calls to logging.getLogger("someLogger") return a 
 # reference to the same logger object. This is true not only 
@@ -11,13 +12,13 @@ from regression_model.config import config
 
 FORMATTER = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s -"
                                 "%(funcName)s:%(lineno)d - %(message)s")
-LOG_FILE = config.LOG_DIR / "ml_models.log"
+LOG_FILE = LOG_DIR / "ml_models.log"
 logging.basicConfig(level=logging.DEBUG, format=FORMATTER, filemode="w")
 
 
 def get_console_handler():
     console_handler = logging.StreamHandler(sys.stdout)
-    console_handler.setLevel(logging.INFO)  
+    console_handler.setLevel(logging.DEBUG)  
     return console_handler
 
 

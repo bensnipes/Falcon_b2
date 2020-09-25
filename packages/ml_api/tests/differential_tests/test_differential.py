@@ -6,8 +6,8 @@ import pandas as pd
 
 from ....regression_model.config import config
 from ...api import config as model_config
-from regression_model.predict import make_prediction
-from regression_model.processing.data_management import load_dataset
+from ....regression_model.predict import make_prediction
+from ....regression_model.processing.data_management import load_dataset
 
 
 @pytest.mark.differential

@@ -1,6 +1,6 @@
 from flask import Flask
 
-from config import get_logger
+from api.config import get_logger
 
 
 _logger = get_logger()

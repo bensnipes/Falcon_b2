@@ -4,7 +4,7 @@ from regression_model.processing.data_management import load_dataset
 
 from regression_model import __version__ as _version
 
-from api import __version__ as api_version
+from ml_api.api import __version__ as api_version
 
 import json
 import math

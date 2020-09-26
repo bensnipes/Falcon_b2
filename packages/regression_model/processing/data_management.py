@@ -1,4 +1,8 @@
 import pandas as pd
+import sys
+
+sys.path.append("...")
+
 from sklearn.externals import joblib
 from sklearn.pipeline import Pipeline
 from ...regression_model.config import config # i need to import config while making sure it doesnt disrupt the folders

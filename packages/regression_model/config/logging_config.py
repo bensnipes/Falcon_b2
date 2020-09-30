@@ -2,7 +2,7 @@ import logging
 
 import sys
 
-from ...regression_model.config.config import LOG_DIR
+from regression_model.config.config import LOG_DIR
 
 
 # Multiple calls to logging.getLogger("someLogger") return a 

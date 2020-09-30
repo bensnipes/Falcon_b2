@@ -1,9 +1,9 @@
 import math
 
-from ...regression_model.predict import make_prediction
-from ...regression_model.processing.data_management import load_dataset
-from ...regression_model.config import logging_config
-from ...regression_model import __version__ as _version
+from regression_model.predict import make_prediction
+from regression_model.processing.data_management import load_dataset
+from regression_model.config import logging_config
+from regression_model import __version__ as _version
 
 
 _logger = logging_config.get_logger()

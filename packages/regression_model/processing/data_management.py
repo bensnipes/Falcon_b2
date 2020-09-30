@@ -1,13 +1,10 @@
 import pandas as pd
-import sys
-
-sys.path.append("...")
 
 from sklearn.externals import joblib
 from sklearn.pipeline import Pipeline
-from ...regression_model.config import config # i need to import config while making sure it doesnt disrupt the folders
-from ...regression_model.config import logging_config
-from ...regression_model import __version__ as _version
+from regression_model.config import config # i need to import config while making sure it doesnt disrupt the folders
+from regression_model.config import logging_config
+from regression_model import __version__ as _version
 
 
 _logger = logging_config.get_logger()

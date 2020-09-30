@@ -2,11 +2,11 @@ import numpy as np
 import pandas as pd
 import typing as t
 
-from ..regression_model.processing.data_management import load_pipeline
-from ..regression_model.config import config
-from ..regression_model.processing.validation import validated_inputs
-from ..regression_model.config import logging_config
-from ..regression_model import __version__ as _version
+from regression_model.processing.data_management import load_pipeline
+from regression_model.config import config
+from regression_model.processing.validation import validated_inputs
+from regression_model.config import logging_config
+from regression_model import __version__ as _version
 
 _logger = logging_config.get_logger()
 

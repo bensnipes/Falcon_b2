@@ -1,13 +1,13 @@
 from flask import Blueprint, request, jsonify
 
 from regression_model.predict import make_prediction
-from api import __version__ as api_version
+from ml_api.api import __version__ as api_version
 from regression_model import __version__ as _version
 
-from api.validation import validate_inputs
+from ml_api.api.validation import validate_inputs
 
 
-from api.config import get_logger
+from ml_api.api.config import get_logger
 
 _logger = get_logger()
 
@@ -37,10 +37,10 @@ def predict():
 
         input_data, errors = validate_inputs(input_json=json_data)
 
-        result = make_prediction(input_data=json_data)
+        result = make_prediction(input_data=input_data)
         _logger.info(f"Outputs: {result}")
 
-        predictions = result.get("predictions")
+        predictions = result.get("predictions").tolist()
         version = result.get("version")
 
          # step5: Return the response as JSON

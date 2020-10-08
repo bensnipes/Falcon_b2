@@ -1,1 +1,1 @@
-web: gunicorn run:app
+web: gunicorn  --pythonpath packages/ml_api  run:application 

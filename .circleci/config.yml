@@ -87,7 +87,30 @@ jobs:
           command: |
              . venv/bin/activate
              chmod +x ./script/publish_model.sh
-             ./script/publish_model.sh ./packages/                         
+             ./script/publish_model.sh ./packages/      
+
+
+  build_and_push_to_heroku_docker:
+    working_directory: ~/project
+    docker:
+      - image: circleci/python:3.7.2
+    steps:
+      - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - run: docker login --username=$HEROKU_EMAIL --password=$HEROKU_API_KEY registry.heroku.com
+      - run:
+          name: Setup Heroku CLI
+          command: |
+            wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+      - run: 
+          name: Build and Push Image
+          command: |
+            make build-ml-api-heroku push-ml-api-heroku
+      - run: 
+          name: Release to Heroku
+          command: |
+            heroku container:release web --app $HEROKU_APP_NAME                   
 
 workflows:
   version: 2
@@ -96,13 +119,14 @@ workflows:
       - test_regression_model
       - test_ml_api
       - differential_tests
-      - train_and_upload_regression_model
       - train_and_upload_regression_model:
           requires:
             - test_ml_api
             - test_regression_model
             - differential_tests
-          
+      - build_and_push_to_heroku_docker:
+          requires:
+            - train_and_upload_regression_model
           filters:
             branches:
               only:

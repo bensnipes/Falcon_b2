@@ -1,7 +1,8 @@
 import pandas as pd
+
 from sklearn.externals import joblib
 from sklearn.pipeline import Pipeline
-from  regression_model.config import config # i need to import config while making sure it doesnt disrupt the folders
+from regression_model.config import config # i need to import config while making sure it doesnt disrupt the folders
 from regression_model.config import logging_config
 from regression_model import __version__ as _version
 
@@ -12,7 +13,7 @@ _logger = logging_config.get_logger()
 
 def load_dataset(*, file_name: str) -> pd.DataFrame:
     data_path = config.DATASET_DIR / file_name
-    data = pd.read_csv(filepath_or_buffer= config.DATASET_DIR/data_path)
+    data = pd.read_csv(filepath_or_buffer=data_path)
     return data
 
 

@@ -1,17 +1,18 @@
 from flask import Flask
-import logging
-from ml_api.api import config
 
-_logger = config.get_logger()
+from ml_api.api.config import get_logger
 
 
-def create_app(config_object) -> Flask:
-    # create a flask app instance.
-    flask_app = Flask("ml_api")
+_logger = get_logger()
+
+def create_app(*, config_object) -> Flask:
+
+    flask_app = Flask(__name__)
     flask_app.config.from_object(config_object)
 
-    # import blueprints
-    from ml_api.api.controller import prediction_app
+    from ..api.controller import prediction_app
     flask_app.register_blueprint(prediction_app)
+    _logger.debug("Application instance created")
+
 
     return flask_app

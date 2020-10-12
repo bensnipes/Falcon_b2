@@ -1,2 +1,7 @@
-saving model version: 0.1.1
-saved pipeline: lasso_regression_output_v0.1.1.pkl
+Application instance created
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [09/Oct/2020 12:43:11] "GET / HTTP/1.1" 404 -
+Health status ok
+127.0.0.1 - - [09/Oct/2020 12:43:19] "GET /health HTTP/1.1" 200 -
+Health status ok
+127.0.0.1 - - [09/Oct/2020 12:43:22] "GET /health HTTP/1.1" 200 -

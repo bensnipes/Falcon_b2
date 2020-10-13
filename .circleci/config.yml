@@ -101,7 +101,7 @@ jobs:
       - run:
           name: Heroku container login
           command: |
-            docker login  --password= echo $HEROKU_API_KEY registry.heroku.com
+            docker login --username=$HEROKU_EMAIL --password=$HEROKU_API_KEY registry.heroku.com
       - run:
           name: Setup Heroku CLI
           command: |

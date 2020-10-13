@@ -98,7 +98,10 @@ jobs:
       - checkout
       - setup_remote_docker:
           docker_layer_caching: false
-      - run: heroku container:login 
+      - run:
+          name: Heroku container login
+          command: |
+            heroku container:login 
       - run:
           name: Setup Heroku CLI
           command: |

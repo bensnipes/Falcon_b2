@@ -101,7 +101,7 @@ jobs:
       - run:
           name: Heroku container login
           command: |
-            heroku container:login 
+            heroku login 
       - run:
           name: Setup Heroku CLI
           command: |

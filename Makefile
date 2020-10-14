@@ -6,7 +6,7 @@ build-ml-api-heroku:
 	docker build --build-arg PIP_EXTRA_INDEX_URL=${PIP_EXTRA_INDEX_URL} -t registry.heroku.com/$(NAME)/web:$(COMMIT_ID) .
 
 push-ml-api-heroku:
-	docker tag a1f1493ae89c registry.heroku.com/$(NAME)/web:$(COMMIT_ID)
+	docker tag latest registry.heroku.com/$(NAME)/web:$(COMMIT_ID)
 	docker push registry.heroku.com/$(NAME)/web:$(COMMIT_ID)
 	
 

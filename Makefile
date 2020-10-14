@@ -6,7 +6,7 @@ build-ml-api-heroku:
 	docker build --build-arg PIP_EXTRA_INDEX_URL=${PIP_EXTRA_INDEX_URL} -t registry.heroku.com/$(NAME)/web:$(COMMIT_ID) .
 
 push-ml-api-heroku:
-	heroku container:login
+	docker login --username=baahdocker --password=$(heroku auth:token) registry.heroku.com
 	docker push registry.heroku.com/$(NAME)/web:$(COMMIT_ID)
 
 

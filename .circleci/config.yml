@@ -101,7 +101,7 @@ jobs:
       - run:
           name: Heroku container login
           command: |
-            docker login --username abboahbaah@gmail.com --password-stdin < ~/Baah@2019 
+            echo "$Baah@2019" | docker login --username abboahbaah@gmail.com --password-stdin             
       - run:
           name: Setup Heroku CLI
           command: |

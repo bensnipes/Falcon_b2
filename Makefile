@@ -7,7 +7,7 @@ build-ml-api-heroku:
 
 push-ml-api-heroku:
 	echo Baah@2019 | docker login --username baahdocker --password-stdin
-	heroku container:login 
+	chmod +x heroku container:login 
 	docker push registry.heroku.com/falcon1-ml/web:$(COMMIT_ID)
 	
 

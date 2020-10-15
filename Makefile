@@ -7,7 +7,7 @@ build-ml-api-heroku:
 
 push-ml-api-heroku:
 	echo Baah@2019 | docker login --username baahdocker --password-stdin
-	docker push registry.heroku.com/$(NAME)/web:$(COMMIT_ID)
+	heroku container:push web
 	
 
 

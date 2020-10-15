@@ -7,7 +7,7 @@ build-ml-api-heroku:
 
 push-ml-api-heroku:
 	echo Baah@2019 | docker login --username baahdocker --password-stdin 
-	docker tag ml_api registry.heroku.com/falcon1-ml/web
+	docker tag first registry.heroku.com/falcon1-ml/web
 	docker push registry.heroku.com/falcon1-ml/web
 	
 

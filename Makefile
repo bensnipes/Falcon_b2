@@ -1,4 +1,4 @@
-NAME=falcon1-ml
+NAME=ml_api
 COMMIT_ID=$(shell git rev-parse HEAD)
 
 

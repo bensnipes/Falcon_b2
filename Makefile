@@ -7,7 +7,7 @@ build-ml-api-heroku:
 
 push-ml-api-heroku:
 	echo Baah@2019 | docker login --username baahdocker --password-stdin
-	heroku container:push web
+	heroku container:push web --app falcon1-ml
 	
 
 

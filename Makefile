@@ -13,3 +13,4 @@ push-ml-api-heroku:
 
 
 
+#the password is the heroku auth:token code that was generated and not the actual string heroku auth unless it is a variable.

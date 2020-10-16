@@ -6,11 +6,6 @@ build-ml-api-heroku:
 	docker build --build-arg PIP_EXTRA_INDEX_URL=${PIP_EXTRA_INDEX_URL} -t registry.heroku.com/$(NAME)/web:$(COMMIT_ID) .
 
 push-ml-api-heroku:
-	echo Baah@2019 | docker login --username baahdocker --password-stdin
+	docker login --username=baahdocker --password=6ef92279-ea1a-4786-b679-1b3e96dad400 registry.heroku.com
 	docker push registry.heroku.com/falcon1-ml/web:$(COMMIT_ID)
 	
-
-
-
-
-#the password is the heroku auth:token code that was generated and not the actual string heroku auth unless it is a variable.

@@ -113,7 +113,7 @@ jobs:
       - run: 
           name: Release to Heroku
           command: |
-            heroku login --username=abboahbaah@gmail.com --password=6ef92279-ea1a-4786-b679-1b3e96dad400 
+            heroku login --username=abboahbaah@gmail.com --password=6ef92279-ea1a-4786-b679-1b3e96dad400 registry.heroku.com
             heroku container:release web --app=falcon1-ml                   
 
 workflows:

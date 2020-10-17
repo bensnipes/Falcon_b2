@@ -111,7 +111,7 @@ jobs:
           name: Build and Push Image
           command: |
             make build-ml-api-heroku push-ml-api-heroku
-      
+     
                                
 
 workflows:

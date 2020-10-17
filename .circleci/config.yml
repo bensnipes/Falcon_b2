@@ -111,10 +111,7 @@ jobs:
           name: Build and Push Image
           command: |
             make build-ml-api-heroku push-ml-api-heroku
-      - run: 
-          name: Release to Heroku
-          command: |
-            heroku container:push web --app=falcon1-ml
+      
                                
 
 workflows:

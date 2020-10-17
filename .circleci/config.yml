@@ -114,7 +114,8 @@ jobs:
       - run: 
           name: Release to Heroku
           command: |
-            heroku container:release web --app=falcon1-ml                   
+            heroku container:release web --app=falcon1-ml
+            curl -nX POST https://api.heroku.com/apps \                   
 
 workflows:
   version: 2

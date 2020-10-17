@@ -114,7 +114,7 @@ jobs:
       - run: 
           name: Release to Heroku
           command: |
-            heroku container:release web release --app=falcon1-ml
+            heroku docker:release web --app=https://dashboard.heroku.com/apps/falcon1-ml
                                
 
 workflows:

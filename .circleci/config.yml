@@ -113,7 +113,7 @@ jobs:
       - run: 
           name: Release to Heroku
           command: |
-            echo Baah@2019 | heroku login --username abboahbaah@gmail.com --password-stdin
+            heroku login 
             heroku container:release web --app=falcon1-ml                   
 
 workflows:

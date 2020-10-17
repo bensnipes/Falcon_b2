@@ -113,6 +113,7 @@ jobs:
       - run: 
           name: Release to Heroku
           command: |
+            heroku login -u abboahbaah@gmail.com -p Baah@2019
             heroku container:release web --app=falcon1-ml                   
 
 workflows:

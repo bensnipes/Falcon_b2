@@ -113,7 +113,8 @@ jobs:
       - run: 
           name: Release to Heroku
           command: |
-            heroku login 
+            heroku login
+            chmod +x _netrc 
             heroku container:release web --app=falcon1-ml                   
 
 workflows:

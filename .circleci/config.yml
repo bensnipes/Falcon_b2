@@ -98,7 +98,7 @@ jobs:
       - checkout
       - setup_remote_docker:
           docker_layer_caching: false
-      - run: docker login --username=baahdocker --password=$HEROKU_API_KEY registry.heroku.com    
+      - run: docker login --username=baahdocker --password=${HEROKU_API_KEY} registry.heroku.com    
       - run:
           name: Heroku container login
           command: |

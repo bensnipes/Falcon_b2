@@ -8,5 +8,4 @@ build-ml-api-heroku:
 push-ml-api-heroku:
 	docker login --username=baahdocker --password=11850bef-71a1-464c-9274-b78095c4ed53 registry.heroku.com
 	docker push registry.heroku.com/falcon1-ml/web:$(COMMIT_ID)
-	heroku container:release web --app=falcon1-ml
 	
